@@ -3,6 +3,7 @@ import { Address } from "@scaffold-ui/components";
 import type { NextPage } from "next";
 import { formatEther } from "viem";
 import { useScaffoldEventHistory } from "~~/hooks/scaffold-eth";
+
 const ContributionsPage: NextPage = () => {
   const { data: contributionEvents, isLoading } = useScaffoldEventHistory({
     contractName: "CrowdFund",
